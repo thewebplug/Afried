@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <svg class="hamburger" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.32H22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 18.32H22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 6.32001H22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+      <form>
+        <input class="search_input" placeholder="Search" />
+      </form>
+      <div class="header_nav">
+        <a href="404.html">404 Page</a>
+        <a href="table.html">Team</a>
+      </div>
+    </header>
+    <main>
+      <div class="table_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position/Role</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>GitHub Bio</th>
+                    <th>Team Photo</th>
+                    <th>Your Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>David King</td>
+                    <td>Engineer</td>
+                    <td><a href="mailto:akabogudavid@gmail.com">akabogudavid@gmail.com</a></td>
+                    <td><a href="tel:+2349029767134">+234-902-976-7134</a></td>
+                    <td><a href="https://github.com/davidakabogu" target="_blank">GitHub</a></td>
+                    <td><img src="../img/IMG_5833.jpg" alt="David King's Photo"></td>
+                    <td>Experienced Engineer with a passion for solving complex engineering problems.</td>
+                </tr>
+                 <tr>
+                    <td>Jude Ohiani</td>
+                    <td>Cybersecurity Specialist</td>
+                    <td><a href="mailto:judeohiani@gmail.com">judeohiani@gmail.com</a></td>
+                    <td><a href="tel:+2348105007112">+234-810-500-7112</td>
+                    <td><a href="https://github.com/judeohians" target="_blank">GitHub</a></td>
+                    <td><img src="../img/214107a5-b540-40e0-abba-2950cb40dde0.JPG" alt="Jude Ohiani's Photo"></td>
+                    <td>Cybersecurity specialist looking to further my software development proficiency.</td>
+                </tr>
+                 <tr>
+                    <td>Mikail Faysal Tobi</td>
+                    <td>Engineer</td>
+                    <td><a href="mailto:mikailfaysaltobi@gmail.com">mikailfaysaltobi@gmail.com</a></td>
+                    <td><a href="tel:+2348138384542">234-813-838-4542</a></td>
+                    <td><a href="https://github.com/ibnmikhail" target="_blank">GitHub</a></td>
+                    <td><img src="../img/PHOTO-2023-08-09-13-51-58.jpg" alt="Mikail Faysal Tobi's Photo"></td>
+                    <td>Full Stack Enthusiast.</td>
+                </tr>
+                 <tr>
+                    <td>Jibril Saleem</td>
+                    <td>Engineer</td>
+                    <td>saleemjibril5@gmail.com</td>
+                    <td><a href="tel:+2348055553569">+234-902-976-7134</a></td>
+                    <td><a href="https://github.com/thewebplug" target="_blank">GitHub</a></td>
+                    <td><img src="../img/IMG_5833.jpg" alt="Jibril Saleem's Photo"></td>
+                    <td>Experienced Engineer with a passion for solving complex engineering problems.</td>
+                </tr>
+                
+            </tbody>
+        </table>
+      </div>
+
+
+        <div class="sidebar none">
+            <div class="sidebar_close">
+              <svg
+                fill="rgb(145, 223, 145)"
+                viewBox="0 0 32 32"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="sidebar_close"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>cancel2</title>
+                  <path
+                    d="M19.587 16.001l6.096 6.096c0.396 0.396 0.396 1.039 0 1.435l-2.151 2.151c-0.396 0.396-1.038 0.396-1.435 0l-6.097-6.096-6.097 6.096c-0.396 0.396-1.038 0.396-1.434 0l-2.152-2.151c-0.396-0.396-0.396-1.038 0-1.435l6.097-6.096-6.097-6.097c-0.396-0.396-0.396-1.039 0-1.435l2.153-2.151c0.396-0.396 1.038-0.396 1.434 0l6.096 6.097 6.097-6.097c0.396-0.396 1.038-0.396 1.435 0l2.151 2.152c0.396 0.396 0.396 1.038 0 1.435l-6.096 6.096z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="sidebar_nav">
+                <a href="404.html">404 Page</a>
+                <a href="table.html">Team</a>
+                <div>Contact us</div>
+            </div>
+           
+          </div>
+    </main>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarClose = document.querySelector('.sidebar_close');
+
+        hamburger.addEventListener('click', function() {
+            sidebar.classList.remove('none')
+        })
+
+        sidebarClose.addEventListener('click', function() {
+            sidebar.classList.add('none')
+        })
+    </script>
+</body>
+</html>
